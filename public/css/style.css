@@ -1,0 +1,74 @@
+.contain {
+    background-color: #dfe9f4;
+    height: 100vh;
+}
+
+.layer {
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+.signup h2 {
+    margin-top: 20%;
+    text-align: center;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 65px;
+    color: #054c73;
+}
+
+.signup h3 {
+    margin-top: 10%;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 55px;
+
+    color: #000000;
+}
+
+.form-signup {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 37px;
+}
+
+.form-signup button {
+    margin-top: 20px;
+    background: #054c73;
+    padding: 13px 40px;
+    border-radius: 50px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.signup small {
+    margin-top: 60px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+    color: #333333;
+}
+
+.signup small a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #333333;
+}
+
+.invalid-feedback p {
+    font-size: small;
+    line-height: 17px;
+}
