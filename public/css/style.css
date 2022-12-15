@@ -72,3 +72,252 @@
     font-size: small;
     line-height: 17px;
 }
+
+.buttonnav {
+    border: 0;
+    background-color: inherit;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    color: #000000;
+}
+
+.navtulisan {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.allText {
+    font-family: arial;
+}
+.backgroundhome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2%;
+    height: 80vh;
+    background-image: url("../storage/image/spacejoy-9M66C_w_ToM-unsplash.jpg");
+    background-size: cover;
+}
+.homedarker {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 65%;
+    z-index: 1;
+}
+.E-Furniture {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    font-weight: 400px;
+    z-index: 2;
+}
+.subText {
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+.subTitle {
+    text-align: center;
+}
+.subText_subTitle {
+    text-align: center;
+}
+.secondSection {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+.subTitle {
+}
+.subText_subTitle {
+    color: gray;
+}
+.firstPhoto {
+    width: 290px;
+    height: 320px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+.secondPhoto {
+    width: 290px;
+    height: 320px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+.thirdPhoto {
+    width: 290px;
+    height: 320px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+.photo {
+    padding: 25px;
+    padding-left: 200px;
+}
+.firstPosition {
+    padding-top: 30px;
+    display: inline-block;
+}
+.secondPosition {
+    display: inline-block;
+}
+.thirdPosition {
+    padding-top: 30px;
+    display: inline-block;
+}
+.thirdSection {
+    background-color: #e2f9f7;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+.thirdSection_Left {
+    display: inline-block;
+    width: 620px;
+    text-align: center;
+}
+.thirdSection_Right {
+    display: inline-block;
+    width: 620px;
+    vertical-align: middle;
+}
+.photoSection3 {
+    height: 450px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.findButton {
+    padding: 14px;
+    padding-left: 38px;
+    padding-right: 38px;
+    border-radius: 17px;
+    background-color: #03344f;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.fourSection {
+    background-color: #03344f;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    color: white;
+}
+.photoFour {
+    background-color: red;
+    width: 185px;
+    height: 185px;
+    margin-right: 18px;
+    border-radius: 10px;
+    border: none;
+    object-fit: cover;
+}
+.positionPhotoFour {
+    display: inline-block;
+}
+.fourSection_Left {
+    display: inline-block;
+    width: 380px;
+    vertical-align: middle;
+    padding-left: 90px;
+}
+.fourSection_Right {
+    display: inline-block;
+    vertical-align: middle;
+}
+.footerSection {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #011a28;
+    color: white;
+    text-align: center;
+}
+
+.logoNavigator {
+    font-size: 25px;
+}
+
+.bginsert {
+    width: 100vw;
+    height: 90vh;
+}
+
+.item-insert label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 45px;
+    color: #054c73;
+}
+
+.item-insert input {
+    font-family: "Montserrat";
+    font-style: normal;
+    border: 2px solid #054c73ac;
+    background: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+.i-angka {
+    font-weight: 600;
+}
+
+.item-insert textarea {
+    font-family: "Montserrat";
+    font-style: normal;
+    border: 2px solid #054c73ac;
+    background: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.judul-halaman {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 55px;
+    text-align: center;
+    color: #054c73;
+}
+
+.btn-insert {
+    background: #054c73;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    right: 10%;
+    bottom: 3%;
+}
+
+.btn-insert:hover {
+    background: #ffffff;
+    color: #054c73;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+}
+
+.image-preview {
+    height: 100%;
+    width: 100%;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}

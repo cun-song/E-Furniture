@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>E-Furniture|Login</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
+@extends('partial.index')
+@section('container')
     <div class="contain d-flex">
         <div class="w-50 h-100 position-relative">
             <img src="{{Storage::Url('image/login.png')}}" class="w-100 h-100" alt="">
@@ -22,7 +12,7 @@
                     @csrf
                     <div class="mb-3">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" id="email" required autofocus value="{{old('email')}}">
+                        <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" id="email" required autofocus value="{{Cookie::get('email') != null ? Cookie::get('email') : old('email')}}">
                         @error('email')
                             <div class="invalid-feedback">
                                 <p>{{$message}}</p>
@@ -31,12 +21,16 @@
                     </div>
                     <div class="mb-3">
                         <label for="password">Password</label>
-                        <input type="password" class="form-control  @error('password') is-invalid @enderror" name="password" id="password" required >
+                        <input type="password" class="form-control  @error('password') is-invalid @enderror" name="password" id="password" required value="{{Cookie::get('email') != null ? Cookie::get('password') : ""}}">
                         @error('password')
                             <div class="invalid-feedback">
                                 <p>{{$message}}</p>
                             </div>
                         @enderror
+                    </div>
+                    <div class="mb-3 form-check d-flex align-items-center">
+                            <input type="checkbox" class="form-check-input me-2" id="remember_me" name="remember_me" checked>
+                            <label class="form-check-label" for="remember_me" style="font-size: 16px" >Remember me</label>
                     </div>
                     <small>Don't have an account? <a href="/register">Sign up</a></small>
                     <div class="d-flex justify-content-center mb-5">
@@ -58,5 +52,4 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+@endsection
