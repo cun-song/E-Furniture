@@ -20,3 +20,6 @@ Route::get('/', function () {
 Route::get('/tr', function () {
     return view('transaction');
 });
+
+Route::get('/checkout/{name}',[CheckoutController::class, 'view']);
+// <a href="{{ url('bookDetail')}}/{{$book->id}}" class="btn btn-primary">Detail</a>
